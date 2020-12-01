@@ -1,8 +1,99 @@
 .listItem {
   display: flex;
-  padding: 50px;
-  margin: 0 auto;
-  width: 500px;
+  margin: 50px auto;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.item {
+  width: 140px;
+  height: 200px;
+  background: #282828;
+  border: 2px solid yellow;
+  border-radius: 20px;
+}
+
+.item:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.wrapImg {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+}
+
+.avatar {
+  width: (140 / 2);
+  height: (140 / 2);
+  border-radius: 50%;
+  z-index: 3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ring {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ringOuter {
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0) 80%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  z-index: 2;
+  box-shadow: 4px 0 2px -4px rgba(255, 255, 255, 0.9),
+    -4px 0 2px -4px rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+}
+
+.wrapText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  animation: animate 4s infinite linear;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.name {
+  color: #fff;
+  font-size: 20px;
 }

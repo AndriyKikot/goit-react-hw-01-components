@@ -7,7 +7,10 @@ function Statistics({ title, stats }) {
       {title && <h2 className={styles.title}>{title}</h2>}
       <ul className={styles.statList}>
         {stats.map(item => (
-          <li className={styles.item} key={item.id}>
+          <li
+            className={styles.item}
+            key={item.id} /*style={{ background: generateColor() }}*/
+          >
             <span className={styles.label}>{item.label}</span>
             <span className={styles.percentage}>{item.percentage}%</span>
           </li>
@@ -16,6 +19,10 @@ function Statistics({ title, stats }) {
     </section>
   );
 }
+
+// function generateColor() {
+//   return '#' + Math.floor(Math.random() * 16777215).toString(16)
+// }
 
 Statistics.propTypes = {
   title: PropTypes.string,
