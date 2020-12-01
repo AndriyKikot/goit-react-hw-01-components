@@ -9,7 +9,7 @@
   width: 140px;
   height: 200px;
   background: #282828;
-  border: 2px solid yellow;
+  border: 2px solid var(--accent-color);
   border-radius: 20px;
 }
 
@@ -94,6 +94,6 @@
 }
 
 .name {
-  color: #fff;
+  color: var(--white-color);
   font-size: 20px;
 }

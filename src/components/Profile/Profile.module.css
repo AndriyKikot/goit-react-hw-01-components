@@ -3,7 +3,7 @@
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.2);
-  background: #fff;
+  background: var(--white-color);
   position: relative;
   text-align: center;
   padding-bottom: 30px;
@@ -14,7 +14,7 @@
   margin: 0 auto 100px;
   width: 300px;
   height: 120px;
-  background: yellow;
+  background: var(--accent-color);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -23,10 +23,10 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 2px solid yellow;
+  border: 2px solid var(--accent-color);
   padding: 5px;
   position: absolute;
-  background: #fff;
+  background: var(--white-color);
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
@@ -52,8 +52,8 @@
   content: '';
   display: block;
   width: 250px;
-  color: #000;
-  border-bottom: 2px solid #000;
+  color: var(--black-color);
+  border-bottom: 2px solid var(--black-color);
   margin: 20px auto 0;
 }
 

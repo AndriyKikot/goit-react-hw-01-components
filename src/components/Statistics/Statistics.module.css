@@ -8,7 +8,7 @@
 }
 
 .title {
-  background-color: yellow;
+  background-color: var(--accent-color);
   padding: 20px;
   text-align: center;
 }
@@ -44,12 +44,12 @@
   top: 20px;
   right: 10px;
   transition: all 0.3s ease-in-out;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .statList .item .percentage {
   font-size: 24px;
-  color: #ffffff;
+  color: var(--white-color);
   margin-bottom: 5px;
 }
 
@@ -66,7 +66,7 @@
   right: -2px;
   bottom: -2px;
   z-index: -1;
-  background-color: #fff;
+  background-color: var(--white-color);
   transform: skew(2deg, 2deg);
 }
 
