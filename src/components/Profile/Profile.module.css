@@ -56,24 +56,3 @@
   border-bottom: 2px solid var(--black-color);
   margin: 20px auto 0;
 }
-
-.stats {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.statsItem {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.label {
-  color: rgb(144, 144, 144);
-}
-
-.quantity {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
